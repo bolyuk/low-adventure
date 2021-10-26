@@ -1,0 +1,190 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.atr.lowadventure"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\NewProject27\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\NewProject27\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\NewProject27\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\NewProject27\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\NewProject27\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\NewProject27\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\NewProject27\app\src\main\AndroidManifest.xml:7:5-80
+13-->D:\NewProject27\app\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\NewProject27\app\src\main\AndroidManifest.xml:8:5-81
+14-->D:\NewProject27\app\src\main\AndroidManifest.xml:8:22-78
+15
+16    <application
+16-->D:\NewProject27\app\src\main\AndroidManifest.xml:10:5-72:19
+17        android:name="com.atr.CrashingApplications"
+17-->D:\NewProject27\app\src\main\AndroidManifest.xml:11:9-52
+18        android:allowBackup="true"
+18-->D:\NewProject27\app\src\main\AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.1.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\06ac751085e7e70957e1a774a38a2693\core-1.1.0\AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@drawable/app_icon"
+21-->D:\NewProject27\app\src\main\AndroidManifest.xml:13:9-42
+22        android:label="LoW Adventure"
+22-->D:\NewProject27\app\src\main\AndroidManifest.xml:14:9-38
+23        android:largeHeap="true"
+23-->D:\NewProject27\app\src\main\AndroidManifest.xml:15:9-33
+24        android:theme="@style/AppTheme" >
+24-->D:\NewProject27\app\src\main\AndroidManifest.xml:16:9-40
+25        <activity
+25-->D:\NewProject27\app\src\main\AndroidManifest.xml:17:9-22:52
+26            android:name="com.atr.lowadventure.singlemode.SingleGameActivity"
+26-->D:\NewProject27\app\src\main\AndroidManifest.xml:18:13-58
+27            android:configChanges="orientation|screenSize"
+27-->D:\NewProject27\app\src\main\AndroidManifest.xml:21:13-59
+28            android:label="@string/title_activity_single_game"
+28-->D:\NewProject27\app\src\main\AndroidManifest.xml:19:13-63
+29            android:screenOrientation="landscape"
+29-->D:\NewProject27\app\src\main\AndroidManifest.xml:22:13-50
+30            android:theme="@style/AppTheme.FullScreen" />
+30-->D:\NewProject27\app\src\main\AndroidManifest.xml:20:13-55
+31        <activity
+31-->D:\NewProject27\app\src\main\AndroidManifest.xml:23:9-27:59
+32            android:name="com.atr.lowadventure.activity.ErrorActivity"
+32-->D:\NewProject27\app\src\main\AndroidManifest.xml:24:13-51
+33            android:label="@string/title_activity_error"
+33-->D:\NewProject27\app\src\main\AndroidManifest.xml:25:13-57
+34            android:process=":error_activity"
+34-->D:\NewProject27\app\src\main\AndroidManifest.xml:26:13-46
+35            android:theme="@style/AppTheme.NoActionBar" />
+35-->D:\NewProject27\app\src\main\AndroidManifest.xml:27:13-56
+36        <activity
+36-->D:\NewProject27\app\src\main\AndroidManifest.xml:28:9-37:20
+37            android:name="com.atr.lowadventure.activity.MainActivity"
+37-->D:\NewProject27\app\src\main\AndroidManifest.xml:29:13-50
+38            android:configChanges="orientation|screenSize"
+38-->D:\NewProject27\app\src\main\AndroidManifest.xml:30:13-59
+39            android:screenOrientation="portrait" >
+39-->D:\NewProject27\app\src\main\AndroidManifest.xml:31:13-49
+40            <intent-filter>
+40-->D:\NewProject27\app\src\main\AndroidManifest.xml:32:13-36:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\NewProject27\app\src\main\AndroidManifest.xml:33:17-69
+41-->D:\NewProject27\app\src\main\AndroidManifest.xml:33:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\NewProject27\app\src\main\AndroidManifest.xml:35:17-77
+43-->D:\NewProject27\app\src\main\AndroidManifest.xml:35:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->D:\NewProject27\app\src\main\AndroidManifest.xml:38:9-42:58
+47            android:name="com.atr.lowadventure.activity.GameActivity"
+47-->D:\NewProject27\app\src\main\AndroidManifest.xml:39:13-50
+48            android:configChanges="orientation|screenSize"
+48-->D:\NewProject27\app\src\main\AndroidManifest.xml:40:13-59
+49            android:screenOrientation="landscape"
+49-->D:\NewProject27\app\src\main\AndroidManifest.xml:41:13-50
+50            android:theme="@style/AppTheme.FullScreen" />
+50-->D:\NewProject27\app\src\main\AndroidManifest.xml:42:13-55
+51        <activity
+51-->D:\NewProject27\app\src\main\AndroidManifest.xml:43:9-46:52
+52            android:name="com.atr.lowadventure.activity.SignPageActivity"
+52-->D:\NewProject27\app\src\main\AndroidManifest.xml:44:13-54
+53            android:configChanges="orientation|screenSize"
+53-->D:\NewProject27\app\src\main\AndroidManifest.xml:45:13-59
+54            android:screenOrientation="portrait" />
+54-->D:\NewProject27\app\src\main\AndroidManifest.xml:46:13-49
+55
+56        <meta-data
+56-->D:\NewProject27\app\src\main\AndroidManifest.xml:48:9-50:69
+57            android:name="com.google.android.gms.version"
+57-->D:\NewProject27\app\src\main\AndroidManifest.xml:49:13-58
+58            android:value="@integer/google_play_services_version" />
+58-->D:\NewProject27\app\src\main\AndroidManifest.xml:50:13-66
+59
+60        <provider
+60-->D:\NewProject27\app\src\main\AndroidManifest.xml:52:9-56:39
+61            android:name="com.google.firebase.provider.FirebaseInitProvider"
+61-->D:\NewProject27\app\src\main\AndroidManifest.xml:53:13-77
+62            android:authorities="com.atr.lowadventure.firebaseinitprovider"
+62-->D:\NewProject27\app\src\main\AndroidManifest.xml:54:13-76
+63            android:exported="false"
+63-->D:\NewProject27\app\src\main\AndroidManifest.xml:55:13-37
+64            android:initOrder="100" />
+64-->D:\NewProject27\app\src\main\AndroidManifest.xml:56:13-36
+65
+66        <service
+66-->D:\NewProject27\app\src\main\AndroidManifest.xml:58:9-67:19
+67            android:name="com.google.firebase.components.ComponentDiscoveryService"
+67-->D:\NewProject27\app\src\main\AndroidManifest.xml:59:13-84
+68            android:exported="false" >
+68-->D:\NewProject27\app\src\main\AndroidManifest.xml:60:13-37
+69            <meta-data
+69-->D:\NewProject27\app\src\main\AndroidManifest.xml:61:13-63:85
+70                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+70-->D:\NewProject27\app\src\main\AndroidManifest.xml:62:17-109
+71                android:value="com.google.firebase.components.ComponentRegistrar" />
+71-->D:\NewProject27\app\src\main\AndroidManifest.xml:63:17-82
+72            <meta-data
+72-->D:\NewProject27\app\src\main\AndroidManifest.xml:64:13-66:85
+73                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+73-->D:\NewProject27\app\src\main\AndroidManifest.xml:65:17-109
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->D:\NewProject27\app\src\main\AndroidManifest.xml:66:17-82
+75        </service>
+76
+77        <uses-library
+77-->D:\NewProject27\app\src\main\AndroidManifest.xml:69:9-71:40
+78            android:name="org.apache.http.legacy"
+78-->D:\NewProject27\app\src\main\AndroidManifest.xml:70:13-50
+79            android:required="false" />
+79-->D:\NewProject27\app\src\main\AndroidManifest.xml:71:13-37
+80
+81        <activity
+81-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:12:9-14:49
+82            android:name="cat.ereza.customactivityoncrash.activity.DefaultErrorActivity"
+82-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:13:13-89
+83            android:process=":error_activity" />
+83-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:14:13-46
+84
+85        <provider
+85-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:16:9-20:39
+86            android:name="cat.ereza.customactivityoncrash.provider.CaocInitProvider"
+86-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:17:13-85
+87            android:authorities="com.atr.lowadventure.customactivityoncrashinitprovider"
+87-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:18:13-85
+88            android:exported="false"
+88-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:19:13-37
+89            android:initOrder="101" />
+89-->[cat.ereza:customactivityoncrash:2.3.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\0141f65bf56bbfb73f6d1d699fe60a2a\jetified-customactivityoncrash-2.3.0\AndroidManifest.xml:20:13-36
+90
+91        <activity
+91-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\b34110d6096a85244030091c98b3718c\firebase-auth-19.0.0\AndroidManifest.xml:24:9-31:50
+92            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+92-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\b34110d6096a85244030091c98b3718c\firebase-auth-19.0.0\AndroidManifest.xml:25:13-85
+93            android:excludeFromRecents="true"
+93-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\b34110d6096a85244030091c98b3718c\firebase-auth-19.0.0\AndroidManifest.xml:26:13-46
+94            android:exported="true"
+94-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\b34110d6096a85244030091c98b3718c\firebase-auth-19.0.0\AndroidManifest.xml:27:13-36
+95            android:launchMode="singleTask"
+95-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\b34110d6096a85244030091c98b3718c\firebase-auth-19.0.0\AndroidManifest.xml:28:13-44
+96            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+96-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\b34110d6096a85244030091c98b3718c\firebase-auth-19.0.0\AndroidManifest.xml:29:13-102
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.firebase:firebase-auth:19.0.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\b34110d6096a85244030091c98b3718c\firebase-auth-19.0.0\AndroidManifest.xml:30:13-72
+98        <activity
+98-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\050caa3f0d7bdb092be2c6731bb1be21\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+99-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\050caa3f0d7bdb092be2c6731bb1be21\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+100            android:exported="false"
+100-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\050caa3f0d7bdb092be2c6731bb1be21\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+101-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Даниил\.gradle\caches\transforms-2\files-2.1\050caa3f0d7bdb092be2c6731bb1be21\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+102    </application>
+103
+104</manifest>

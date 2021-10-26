@@ -1,0 +1,31 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|bottom"
+		android:orientation="vertical"
+		android:weightSum="5">
+		<LinearLayout
+			android:id="@+id/gamelinear"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+			android:layout_weight="5">
+
+			<ImageView
+				android:id="@+id/imageview2"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="centerCrop"
+				android:scaleX="1.1"
+				android:src="@drawable/background" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
